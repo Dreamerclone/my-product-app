@@ -1,5 +1,5 @@
 import React from 'react';
-import AddProduct from './AddProduct';
+import AddProduct from './AddProduct.jsx';
 
 function App() {
   return (
