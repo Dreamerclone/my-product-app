@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Dark text */
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.btn-submit, .btn-clear {
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    color: #fff; /* White text */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.btn-submit {
+    background-color: #28a745; /* Green for save */
+}
+
+.btn-clear {
+    background-color: #dc3545; /* Red for clear */
+}
+
+.btn-submit:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.btn-clear:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move up on fade in */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+}
