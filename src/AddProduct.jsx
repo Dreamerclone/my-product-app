@@ -21,9 +21,9 @@ const AddProduct = () => {
 
     try {
       const response = await axios.post('http://localhost:4000/api/products', product);
-      alert('Product saved!'); // Show success alert
+      alert('Product successfully saved!'); 
       console.log(response.data);
-      handleClear(); // Clear form after submission
+      handleClear(); 
     } catch (error) {
       console.error('Error saving product:', error);
     }
@@ -42,7 +42,7 @@ const AddProduct = () => {
 
   return (
     <div className="container">
-      <h2>Test Add Product</h2>
+      <h2>Add New Product</h2>
       <form onSubmit={handleSubmit} className="product-form">
         <input
           type="text"

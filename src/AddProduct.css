@@ -1,26 +1,24 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
+    background-color: #000; /* Change to black background */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full height of the viewport */
+    color: #fff; /* Set text color to white for better contrast */
 }
 
 .container {
     max-width: 500px;
+    margin: 50px auto; /* Center the container */
     padding: 20px;
-    background-color: #fff; /* White background for the form */
+    background-color: #222; /* Dark gray background for the form */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
     animation: fadeIn 0.5s ease; /* Fade-in animation */
 }
 
 h2 {
     text-align: center;
-    color: #333; /* Dark text */
+    color: #fff; /* White text for headings */
 }
 
 .product-form {
@@ -31,9 +29,11 @@ h2 {
 input, textarea {
     margin: 10px 0;
     padding: 15px;
-    border: 1px solid #ccc; /* Light border */
+    border: 1px solid #555; /* Change border color to a darker shade */
     border-radius: 5px; /* Rounded corners */
     transition: border-color 0.3s; /* Smooth border color change */
+    background-color: #333; /* Dark background for input fields */
+    color: #fff; /* White text inside input fields */
 }
 
 input:focus, textarea:focus {

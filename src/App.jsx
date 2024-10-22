@@ -1,13 +1,19 @@
 import React from 'react';
 import AddProduct from './AddProduct.jsx';
+import ProductList from './ProductList.jsx';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Add a New Product</h1>
-      <AddProduct />
+    <div className="app-container">
+      <div className="left-section">
+        <AddProduct />
+      </div>
+      <div className="right-section">
+        <ProductList />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
